@@ -19,44 +19,43 @@
     </div>
 
     <div class="row">
-    <div class="col-lg-4 col-xs-6">
+    <div class="col-lg-4 col-xs-4">
       <!-- small box -->
       <div class="small-box bg-aqua">
         <div class="inner">
 
-
-          <p>Kajian</p>
+          <h4>Profesores</h4>
         </div>
         <div class="icon">
           <i class="glyphicon glyphicon-asterisk"></i>
         </div>
-        <a href="{{url('/admin/kajian')}}" class="small-box-footer">Details <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+        <a href="{{url('/admin/kajian')}}" class="small-box-footer">Ver... <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
 
     <!-- ./col -->
-    <div class="col-lg-4 col-xs-6">
+    <div class="col-lg-4 col-xs-4">
       <!-- small box -->
       <div class="small-box bg-yellow">
         <div class="inner">
 
-          <p>Direktori Masjid</p>
+        <h4>Estudiantes</h4>
         </div>
         <div class="icon">
           <i class="glyphicon glyphicon-home"></i>
         </div>
-        <a href="{{url('/admin/direktori')}}" class="small-box-footer">Details <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+        <a href="{{url('/admin/direktori')}}" class="small-box-footer">Ver... <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-4 col-xs-6">
+    <div class="col-lg-4 col-xs-4">
       <!-- small box -->
       <div class="small-box bg-red">
         <div class="inner">
 
 
-          <p>Quotes</p>
+        <h4>Gestionar</h4>
         </div>
         <div class="icon">
           <i class="glyphicon glyphicon-certificate"></i>
@@ -66,48 +65,48 @@
     </div>
 
     <!-- ./col -->
-    <div class="col-lg-4 col-xs-6">
+    <div class="col-lg-4 col-xs-4">
       <!-- small box -->
       <div class="small-box bg-green">
         <div class="inner">
 
-          <p>Event</p>
+        <h4>Calificaciones</h4>
         </div>
         <div class="icon">
           <i class="glyphicon glyphicon-tags"></i>
         </div>
-        <a href="{{url('/admin/event')}}" class="small-box-footer">Details <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+        <a href="{{url('/admin/event')}}" class="small-box-footer">Ver... <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
       </div>
     </div>
 
     <!-- ./col -->
-    <div class="col-lg-4 col-xs-6">
+    <div class="col-lg-4 col-xs-4">
       <!-- small box -->
       <div class="small-box bg-blue">
         <div class="inner">
 
-          <p>ZIS</p>
+        <h4>Usuarios</h4>
         </div>
         <div class="icon">
           <i class="glyphicon glyphicon-usd"></i>
         </div>
-        <a href="{{url('/admin/zis')}}" class="small-box-footer">Details <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+        <a href="{{url('/admin/zis')}}" class="small-box-footer">Ver... <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
       </div>
     </div>
 
 
     <!-- ./col -->
-    <div class="col-lg-4 col-xs-6">
+    <div class="col-lg-4 col-xs-4">
       <!-- small box -->
       <div class="small-box bg-yellow">
         <div class="inner">
 
-          <p>Co-Working</p>
+        <h4>Finanzas</h4>
         </div>
         <div class="icon">
           <i class="glyphicon glyphicon-briefcase"></i>
         </div>
-        <a href="{{url('/admin/coworking')}}" class="small-box-footer">Details <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+        <a href="{{url('/admin/coworking')}}" class="small-box-footer">Ver... <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
       </div>
     </div>
 @stop

@@ -89,7 +89,7 @@ public function update(Request $request, $id)
       'waktu_event' => 'required',
     ]);
     Event::find($id)->update($data);
-    return redirect('admin/event')->with('alert-success','Data berhasil diubah!');
+    return redirect('admin/event')->with('alert-success','Felicitacios, los datos han sido almacenados satisfactoriamente!');
 }
 
 /**

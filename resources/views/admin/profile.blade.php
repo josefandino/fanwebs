@@ -18,13 +18,13 @@
         <div class="box-body" style="margin:10px;">
             {!! Form::myInput('text', 'name', 'Nombre') !!}
             {!! Form::myInput('email', 'email', 'Email') !!}
-            {!! Form::myInput('password', 'password', 'Password') !!}
-            {!! Form::myInput('password', 'password_confirmation', 'Password confirmation') !!}
+            {!! Form::myInput('password', 'password', 'Contraseña') !!}
+            {!! Form::myInput('password', 'password_confirmation', 'Repetir contraseña') !!}
             {!! Form::myFileImage('avatar', 'Avatar', $item->avatar) !!}
         </div>
 
         <div class="box-footer" style="background-color:#f5f5f5;border-top:1px solid #d2d6de;">
-      	  <button type="submit" class="btn btn-info" style="width:100px;">{{ trans('app.update_button') }}</button>
+      	  <button type="submit" class="btn btn-info" style="width:100px;">{{ trans('Actualizar') }}</button>
       	</div>
 
       {!! Form::close() !!}

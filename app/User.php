@@ -49,7 +49,7 @@ class User extends Authenticatable
 
         return array_merge($commun, [
             'email'    => 'required|email|max:50|unique:users',
-            'password' => 'required|confirmed|min:8',
+            'password' => 'required|confirmed|min:6',
         ]);
     }
 

@@ -42,6 +42,6 @@ class ProfileController extends Controller
         \Auth::user()->update(['name' => $request->name]);
         \Auth::user()->update(['email' => $request->email]);
 
-        return back()->withSuccess(trans('app.success_update'));
+        return back()->withSuccess(trans('Datos almacenados correctamente.'));
     }
 }

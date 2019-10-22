@@ -80,7 +80,7 @@ class CategoriesController extends Controller
         $item = Category::findOrFail($id);
         $item->update($request->all());
         //return back()->withSuccess(trans('app.success_update'));
-        return redirect()->route(ADMIN.'.categories.index')->withSuccess(trans('app.success_update'));
+        return redirect()->route(ADMIN.'.categories.index')->withSuccess(trans('Felicitaciones, tus cambios han sido realizados satisfactoriamente.'));
     }
 
     /**
