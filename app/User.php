@@ -38,7 +38,7 @@ class User extends Authenticatable
     public static function rules($update = false, $id = null)
     {
         $commun = [
-            'name' => 'required|min:2',
+            'name' => 'required|min:5',
             'email'    => "required|email|unique:users,email,$id",
             'password' => 'nullable|confirmed',
         ];
@@ -48,8 +48,8 @@ class User extends Authenticatable
         }
 
         return array_merge($commun, [
-            'email'    => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
+            'email'    => 'required|email|max:50|unique:users',
+            'password' => 'required|confirmed|min:8',
         ]);
     }
 

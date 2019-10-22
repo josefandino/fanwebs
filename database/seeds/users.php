@@ -20,20 +20,20 @@ class users extends Seeder
 
         array_push($data, [
             'name'     => 'Superadmin',
-            'email'    => 'superadmin@fake.com',
+            'email'    => 'superadmin@mail.com',
             'password' => bcrypt('123456'),
             'role'     => 5,
             'active'     => 1,
-            'avatar'   => 'avatar1.jpg',
+            'avatar'   => 'admin.png',
         ]);
 
         array_push($data, [
-            'name'     => $faker->name,
-            'email'    => 'user@fake.com',
+            'name'     => 'user',
+            'email'    => 'user@mail.com',
             'password' => bcrypt('123456'),
             'role'     => 0,
             'active'     => 1,
-            'avatar'   => 'avatar2.jpg',
+            'avatar'   => 'parents.png',
         ]);
 
         User::insert($data);

@@ -1,8 +1,8 @@
 <?php
-
+use App\Information;
 use Faker\Generator as Faker;
 
-$factory->define(App\information::class, function (Faker $faker) {
+$factory->define(App\Information::class, function (Faker $faker) {
     return [
         //
     ];

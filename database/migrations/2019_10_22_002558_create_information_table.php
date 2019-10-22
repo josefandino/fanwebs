@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTblDirektori extends Migration
+class CreateInformationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,11 @@ class CreateTblDirektori extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('direktori', function (Blueprint $table) {
+    {       
+        Schema::create('information', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_masjid');
-            $table->string('lokasi_masjid');
+            $table->string('phrase_id')->unique();
+            $table->string('name_info')->unique();
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateTblDirektori extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('direktori');
+        Schema::dropIfExists('information');
     }
 }

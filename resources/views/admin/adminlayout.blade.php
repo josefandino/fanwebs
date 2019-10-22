@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{ asset('css/admin-vendor.css') }}">
         <link rel="stylesheet" href="{{ asset('css/admin-custom.css') }}">
     @endif
+    
 
     @yield('css')
 
@@ -27,9 +28,9 @@
             <!-- Logo -->
             <a href="{{ url(ADMIN . '/') }}" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>L</b></span>
+                <span class="logo-mini"><img src="{{ asset('../img/favicon.png') }}" alt=""></span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin </span>
+                <span class="logo-lg"><img src="{{ asset('../img/logo_white.png') }}" alt="" height="40"></span>
             </a>
 
             <!-- Header Navbar -->
@@ -58,18 +59,18 @@
                                     <img src="{{ auth()->user()->avatar }}" width="160" height="160" class="img-circle" alt="User Image">
                                     <p>
                                         {{ auth()->user()->email }} <br/>
-                                        <small >Role : {{ auth()->user()->rolename() }}</small>
+                                        <small> {{ auth()->user()->rolename() }}</small>
                                     </p>
                                 </li>
 
                                 <!-- Menu Footer-->
                                 <li class="user-footer" style="height:75px;padding-top:20px;">
                                     <div class="pull-left">
-                                        <a href="{{ url('admin\profileedit', auth()->id()) }}" class="btn btn-info btn-flat" style="width:90px">Profile</a>
+                                        <a href="{{ url('admin\profileedit', auth()->id()) }}" class="btn btn-info btn-flat" style="width:90px">Mi cuenta</a>
                                     </div>
                                     <div class="pull-right">
                                         {!! Form::open(['url'=>'logout']) !!}
-                                            <button type="submit" class="btn btn-danger btn-flat"  style="width:90px">Logout</button>
+                                            <button type="submit" class="btn btn-danger btn-flat"  style="width:90px">Salir</button>
                                         {!! Form::close() !!}
                                     </div>
                                 </li>
@@ -94,7 +95,7 @@
                   <div class="pull-left info">
                     <p class="user-panel-name">{{ Auth::user()->name }} </p>
                     <p>
-                      <small ><a href="{{ route('logout', auth()->id()) }}"><i class="fa fa-sign-out"></i> <span>Logout</span></a></small>
+                      <small ><a href="{{ route('logout', auth()->id()) }}"><i class="fa fa-sign-out"></i> <span>Salir</span></a></small>
                     </p>
 
                   </div>
@@ -130,15 +131,18 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
+        <style>.footer{background:#222d32;color:#ddd;}</style>
         <!-- Main Footer -->
-        <footer class="main-footer">
+        <footer class="main-footer footer">
             <!-- To the right -->
             <div class="pull-right hidden-xs">
-                ver 0.0.1
+                ver 1.0.1
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; {{ date('Y') }} <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; {{ date('Y') }} <a href="#">{{ env('app_name') }} </a>.</strong> All rights reserved.
+            <div class="md-4">
+                <a href="http://fanwebs.dimic.org/">This system was designed</a>
+            </div>
         </footer>
 
     </div>
